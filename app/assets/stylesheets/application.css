@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: #e4e7ed;
+}
+
+/* jumbotron CSS */
+.jumbotron {
+  background-image: url(forest.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+}
+
+/* Navigation CSS */
+.navbar {
+  background-color: #ededed !important;
+}
