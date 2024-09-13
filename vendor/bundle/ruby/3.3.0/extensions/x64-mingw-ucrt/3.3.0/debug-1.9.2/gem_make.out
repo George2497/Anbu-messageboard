@@ -1,0 +1,20 @@
+current directory: C:/Users/georg_0mijctp/OneDrive/Desktop/Anbu/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+C:/Ruby33-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/georg_0mijctp/OneDrive/Desktop/Anbu/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240913-6104-dgzbsq sitelibdir\=./.gem.20240913-6104-dgzbsq clean
+
+current directory: C:/Users/georg_0mijctp/OneDrive/Desktop/Anbu/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240913-6104-dgzbsq sitelibdir\=./.gem.20240913-6104-dgzbsq
+generating debug-x64-mingw-ucrt.def
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: C:/Users/georg_0mijctp/OneDrive/Desktop/Anbu/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240913-6104-dgzbsq sitelibdir\=./.gem.20240913-6104-dgzbsq install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20240913-6104-dgzbsq/debug
+
+current directory: C:/Users/georg_0mijctp/OneDrive/Desktop/Anbu/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240913-6104-dgzbsq sitelibdir\=./.gem.20240913-6104-dgzbsq clean

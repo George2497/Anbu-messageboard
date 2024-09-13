@@ -1,25 +1,8 @@
-# README
+This is a messageboard application created by George Koundouri in Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-"# Anbu-messageboard" 
+This application will allow you to:
+Create an account
+Speak to differnt users in real time
+Add blog posts to be able to speak about them
+Sort your blog posts into different categories
+Add friends
