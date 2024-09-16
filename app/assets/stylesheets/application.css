@@ -36,3 +36,14 @@ body {
 .navbar {
   background-color: #ededed !important;
 }
+
+.nav-link {
+  color: #00000a;
+}
+
+/* Login form */
+#logincard {
+  background-image: url(blog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
