@@ -35,6 +35,8 @@ body {
 /* Navigation CSS */
 .navbar {
   background-color: #ededed !important;
+  color: #00000a;
+  text-decoration: none;
 }
 
 .nav-link {
