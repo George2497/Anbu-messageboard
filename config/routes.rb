@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   # Posts Controller routes
   get 'home', to: 'posts#index'
+  get 'createpost', to: 'posts#create'
 
   # Sessions Controller routes
   get 'login', to: 'sessions#new'
