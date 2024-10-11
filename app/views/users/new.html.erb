@@ -2,7 +2,7 @@
 <div class="container">
   <div class="card mt-3 w-100" id="logincard" style="background-color: #ededed;">
     <div class="card-body shadow p-3">
-      <%= form_with(model: @user, class: " offset-lg-5 mt-2", local:true) do |form| %>
+      <%= form_with(model: @user, class:"offset-lg-5 mt-2", local:true) do |form| %>
         <div class="form-group col-5">
           <%= form.label :email, class:"fw-bold" %>
           <%= form.email_field :email, class: "form-control shadow rounded", placeholder: "Enter email" %>

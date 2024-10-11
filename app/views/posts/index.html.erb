@@ -1,18 +1,19 @@
 <div class="container">
-<h1 class="row justify-content-center">Welcome to ANBU</h1>
-  <div class="card text-center shadowp3">
-    <div class="card-header">
-      <em>By George Koundouri</em>
-    </div>
+  <h1 class="row justify-content-center">Welcome to ANBU</h1>
     <% @posts.each do |post| %>
-      <div class="card-body">
-        <h5 class="card-title"><%= post.title %></h5>
-        <p class="card-text"><%= post.description %></p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="card text-center shadowp mt-3">
+        <div class="card-header">
+          <em>By George Koundouri</em>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= post.title %></h5>
+          <p class="card-text"><%= post.description %></p>
+          <%= link_to 'View', post_path(post), class: "btn btn-primary" %>
+          <%= link_to 'Edit', edit_post_path(post), class: "btn btn-success" %>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
       </div>
     <% end %>
-    <div class="card-footer text-muted">
-      2 days ago
-    </div>
-  </div>
 </div>

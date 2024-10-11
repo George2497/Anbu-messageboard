@@ -1,13 +1,23 @@
-<% if notice %>
+<%# Alert for notice %>
+<% if flash[:notice] %>
   <div class="alert alert-primary alert-dismissible fade show d-flex justify-content-between-items-start mt-2" role="notice">
       <button type="button" class="btn-close pl-3", data-bs-dismiss="alert" aria-label="Close"></button>
-    <%= notice %>
+    <%= flash[:notice] %>
   </div>
 <% end %>
 
-<% if alert %>
+<%# Alert for alert %>
+<% if flash[:alert] %>
   <div class="alert alert-danger alert-dismissible fade show d-flex justify-content-between-items-start mt-2" role="alert">
-  <button type="button" class="btn-close", data-bs-dismiss="alert" aria-label="Close"></button>
-    <%= alert %>
+      <button type="button" class="btn-close", data-bs-dismiss="alert" aria-label="Close"></button>
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
+<%# Alert for successful %>
+<% if flash[:successful] %>
+  <div class="alert alert-success alert-dismissible fade show d-flex justify-content-between-items-start mt-2" role="successful">
+      <button type="button" class="btn-close", data-bs-dismiss="alert" aria-label="Close"></button>
+    <%= flash[:successful] %>
   </div>
 <% end %>

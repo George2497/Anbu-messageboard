@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   root 'main#index'
 
   # Posts Controller routes
+  resources :posts
   get 'home', to: 'posts#index'
-  get 'createpost', to: 'posts#create'
+
+  get 'createpost', to: 'posts#new'
+  post 'createpost', to: 'posts#create'
 
   # Sessions Controller routes
   get 'login', to: 'sessions#new'
