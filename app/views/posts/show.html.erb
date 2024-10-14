@@ -2,7 +2,7 @@
   <h1 class="row justify-content-center">View post</h1>
       <div class="card text-center shadowp mt-3">
         <div class="card-header">
-          <em>By George Koundouri</em>
+            <em><%= @post.user.username %></em>
         </div>
         <div class="card-body">
           <h5 class="card-title"><%= @post.title %></h5>
