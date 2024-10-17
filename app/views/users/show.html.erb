@@ -1,6 +1,7 @@
+
 <div class="container">
-  <h1 class="row justify-content-center">Welcome to ANBU</h1>
-    <% @posts.each do |post| %>
+  <h1 class="row justify-content-center"><%= @user.username %>' Posts</h1>
+    <% @user.posts.each do |post| %>
       <div class="card text-center shadowp mt-3">
         <div class="card-header">
           <% if post.user %>

@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def index
     # Display all users in the database
-    @users = User.all[params[:user]]
+    @users = User.all
   end
 
   def new
