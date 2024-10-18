@@ -1,6 +1,15 @@
 <div class="container">
   <h1 class="row justify-content-center">Welcome to ANBU</h1>
-    <% @posts.each do |post| %>
+
+  <div class="digg_pagination">
+    <div class="page_info">
+      <%= page_entries_info @posts %>
+    </div>
+    <%= will_paginate @posts, :container => false %>
+  </div>
+  
+  <% @posts.each do |post| %>
+    
       <div class="card text-center shadowp mt-3">
         <div class="card-header">
           <% if post.user %>
@@ -18,5 +27,13 @@
           <%= time_ago_in_words(post.created_at) %> ago
         </div>
       </div>
-    <% end %>
+  <% end %>
+
+  <div class="digg_pagination">
+    <div class="page_info">
+      <%= page_entries_info @posts %>
+    </div>
+    <%= will_paginate @posts, :container => false %>
+  </div>
+
 </div>

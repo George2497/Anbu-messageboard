@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update]
 
   def index
-    @posts = Post.all
+    @posts = Post.paginate(page: params[:page], per_page: 10)
   end
 
   def new
@@ -13,7 +13,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     if @post.save
-      flash[:successful] = "You have successfully posted a new article!"
+      flash[:notice] = "You have successfully posted a new article!"
       redirect_to @post
     else
       flash[:alert] = "Your post cannot be posted"
@@ -26,7 +26,7 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      flash[:successful] = "You have successfully edited a post!"
+      flash[:notice] = "You have successfully edited a post!"
       redirect_to @post
     end
   end
@@ -37,7 +37,7 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find(params[:id])
     @post.destroy
-    flash[:successful] = "You have just deleted a post"
+    flash[:notice] = "You have just deleted a post"
     redirect_to home_path
   end
 
