@@ -1,13 +1,10 @@
 <div class="container">
   <h1 class="row justify-content-center">Welcome to ANBU</h1>
 
-  <div class="digg_pagination">
-    <div class="page_info">
-      <%= page_entries_info @posts %>
-    </div>
+  <div class="apple_pagination">
     <%= will_paginate @posts, :container => false %>
   </div>
-  
+
   <% @posts.each do |post| %>
     
       <div class="card text-center shadowp mt-3">
@@ -29,10 +26,7 @@
       </div>
   <% end %>
 
-  <div class="digg_pagination">
-    <div class="page_info">
-      <%= page_entries_info @posts %>
-    </div>
+  <div class="apple_pagination">
     <%= will_paginate @posts, :container => false %>
   </div>
 
