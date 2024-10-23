@@ -36,7 +36,7 @@
 
     <div class="d-flex ms-auto">
       <% if logged_in? %>
-        <%= link_to current_user.username, user_path(current_user) %> &numsp;
+        <%= link_to current_user.username, profile_user_path(current_user) %> &numsp;
         <%= button_to 'Log out', logout_path, class: "nav-link me-4", method: :delete %>
       <% else %>
         <%= link_to 'Log in', login_path, class: "nav-link me-4" %> &numsp;

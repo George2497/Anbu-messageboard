@@ -17,6 +17,10 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
 
   # Users Controller routes
-  resources :users
+  resources :users do
+    member do
+      get :profile
+    end
+  end
   get 'signup', to: 'users#new'
 end

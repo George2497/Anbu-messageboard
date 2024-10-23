@@ -2,7 +2,7 @@
   <h1 class="row justify-content-center">View post</h1>
       <div class="card text-center shadowp mt-3">
         <div class="card-header">
-            by <em><%= @post.user.username %></em>
+            by <em><%= link_to @post.user.username, user_path(@post.user) %></em>
         </div>
         <div class="card-body">
           <h5 class="card-title"><%= @post.title %></h5>
@@ -11,7 +11,7 @@
           <%= link_to '[Back to listings page]', home_path %>
         </div>
         <div class="card-footer text-muted">
-          2 days ago
+          <%= time_ago_in_words(@post.created_at) %>ago
         </div>
       </div>
 </div>
