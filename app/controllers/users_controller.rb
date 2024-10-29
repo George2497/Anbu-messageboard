@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :edit, :update]
 
   def index
     # Display all users in the database
@@ -33,6 +34,10 @@ class UsersController < ApplicationController
   end
 
   def update
+    if @user.update(user_params)
+      flash[:notice] = "You have successfully changed your account details!"
+      redirect_to profile
+    end
   end
 
   def destroy
@@ -47,4 +52,7 @@ class UsersController < ApplicationController
     params.require(:user).permit(:email, :username, :password)
   end
 
+  def set_user
+    @user = User.find(params[:id])
+  end
 end
