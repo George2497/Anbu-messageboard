@@ -23,4 +23,9 @@ Rails.application.routes.draw do
     end
   end
   get 'signup', to: 'users#new'
+
+
+  # Category Controller routes
+  resources :categories
+  get 'categories', to: 'categories#index'
 end

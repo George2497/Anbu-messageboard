@@ -1,0 +1,14 @@
+<h1 class="row justify-content-center">Add a Category</h1>
+<div class="container">
+  <div class="card mt-3 w-100" id="categorycard" style="background-color: #ededed;">
+    <div class="card-body shadow p-3">
+      <%= form_with(model: @category, class:"offset-lg-5 mt-2", local:true) do |form| %>
+        <div class="form-group col-5">
+          <%= form.label :name, class:"fw-bold" %>
+          <%= form.text_field :name, class: "form-control shadow rounded", placeholder: "Enter a category" %>
+        </div>
+        <%= form.submit class: "btn btn-primary mt-3" %>
+      <% end %>
+    </div>
+  </div>
+</div>
