@@ -1,6 +1,16 @@
 <div class="container">
-<h1>Categories</h1>
+  <h1 class="row justify-content-center">Categories</h1>
+
   <% @categories.each do |category| %>
-    <li><%= category.name %></li>
+    <div class="row text-center shadowp mt-3 row justify-content-center">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= category.name %></h5>
+            <%= link_to 'Go to category', category_path(category) %>
+          </div>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>

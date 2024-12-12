@@ -1,0 +1,37 @@
+pkg_config: checking for pkg-config for yaml-0.1... -------------------- not found
+
+PATH=".;C:/Ruby33-x64/lib;C:\Ruby33-x64\bin;C:\Ruby33-x64\msys64\ucrt64\bin;C:\Ruby33-x64\msys64\usr\bin;C:\Program Files\PowerShell\7;C:\Ruby32-x64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Georg\AppData\Local\Microsoft\WindowsApps;D:\Coding Software\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PowerShell\7\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\GitHub CLI\;C:\Program Files\Git\cmd;C:\Ruby33-x64\bin;C:\Ruby26-x64\bin;D:\Coding Software\Anaconda;D:\Coding Software\Anaconda\Library\mingw-w64\bin;D:\Coding Software\Anaconda\Library\usr\bin;D:\Coding Software\Anaconda\Library\bin;D:\Coding Software\Anaconda\Scripts;D:\Coding Software\Anaconda5;D:\Coding Software\Anaconda5\Library\mingw-w64\bin;D:\Coding Software\Anaconda5\Library\usr\bin;D:\Coding Software\Anaconda5\Library\bin;D:\Coding Software\Anaconda5\Scripts;C:\Users\georg_0mijctp\AppData\Local\Microsoft\WindowsApps;C:\Users\georg_0mijctp\AppData\Local\atom\bin;D:\Coding Software\Microsoft VS Code\bin;C:\Users\georg_0mijctp\AppData\Local\Microsoft\WindowsApps;C:\Users\georg_0mijctp\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\georg_0mijctp\AppData\Local\Yarn\bin;C:\Users\georg_0mijctp\AppData\Roaming\npm;C:\Users\georg_0mijctp\AppData\Local\Programs\Git\cmd" x86_64-w64-mingw32-pkg-config --exists yaml-0.1
+package configuration for yaml-0.1 is not found
+--------------------
+
+find_header: checking for yaml.h... -------------------- no
+
+PATH=".;C:/Ruby33-x64/lib;C:\Ruby33-x64\bin;C:\Ruby33-x64\msys64\ucrt64\bin;C:\Ruby33-x64\msys64\usr\bin;C:\Program Files\PowerShell\7;C:\Ruby32-x64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Georg\AppData\Local\Microsoft\WindowsApps;D:\Coding Software\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PowerShell\7\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\GitHub CLI\;C:\Program Files\Git\cmd;C:\Ruby33-x64\bin;C:\Ruby26-x64\bin;D:\Coding Software\Anaconda;D:\Coding Software\Anaconda\Library\mingw-w64\bin;D:\Coding Software\Anaconda\Library\usr\bin;D:\Coding Software\Anaconda\Library\bin;D:\Coding Software\Anaconda\Scripts;D:\Coding Software\Anaconda5;D:\Coding Software\Anaconda5\Library\mingw-w64\bin;D:\Coding Software\Anaconda5\Library\usr\bin;D:\Coding Software\Anaconda5\Library\bin;D:\Coding Software\Anaconda5\Scripts;C:\Users\georg_0mijctp\AppData\Local\Microsoft\WindowsApps;C:\Users\georg_0mijctp\AppData\Local\atom\bin;D:\Coding Software\Microsoft VS Code\bin;C:\Users\georg_0mijctp\AppData\Local\Microsoft\WindowsApps;C:\Users\georg_0mijctp\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\georg_0mijctp\AppData\Local\Yarn\bin;C:\Users\georg_0mijctp\AppData\Roaming\npm;C:\Users\georg_0mijctp\AppData\Local\Programs\Git\cmd" "gcc -o conftest.exe -IC:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -IC:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -IC:/Ruby33-x64/include/ruby-3.3.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby33-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Ruby33-x64/lib;C:\Ruby33-x64\bin;C:\Ruby33-x64\msys64\ucrt64\bin;C:\Ruby33-x64\msys64\usr\bin;C:\Program Files\PowerShell\7;C:\Ruby32-x64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Georg\AppData\Local\Microsoft\WindowsApps;D:\Coding Software\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PowerShell\7\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\GitHub CLI\;C:\Program Files\Git\cmd;C:\Ruby33-x64\bin;C:\Ruby26-x64\bin;D:\Coding Software\Anaconda;D:\Coding Software\Anaconda\Library\mingw-w64\bin;D:\Coding Software\Anaconda\Library\usr\bin;D:\Coding Software\Anaconda\Library\bin;D:\Coding Software\Anaconda\Scripts;D:\Coding Software\Anaconda5;D:\Coding Software\Anaconda5\Library\mingw-w64\bin;D:\Coding Software\Anaconda5\Library\usr\bin;D:\Coding Software\Anaconda5\Library\bin;D:\Coding Software\Anaconda5\Scripts;C:\Users\georg_0mijctp\AppData\Local\Microsoft\WindowsApps;C:\Users\georg_0mijctp\AppData\Local\atom\bin;D:\Coding Software\Microsoft VS Code\bin;C:\Users\georg_0mijctp\AppData\Local\Microsoft\WindowsApps;C:\Users\georg_0mijctp\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\georg_0mijctp\AppData\Local\Yarn\bin;C:\Users\georg_0mijctp\AppData\Roaming\npm;C:\Users\georg_0mijctp\AppData\Local\Programs\Git\cmd" "gcc -IC:/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt -IC:/Ruby33-x64/include/ruby-3.3.0/ruby/backward -IC:/Ruby33-x64/include/ruby-3.3.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -O3 -fno-fast-math -fstack-protector-strong   -c conftest.c"
+conftest.c:5:10: fatal error: yaml.h: No such file or directory
+    5 | #include <yaml.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <yaml.h>
+/* end */
+
+--------------------
+
