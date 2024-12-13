@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :requireLogin
+  before_action :requireLogin, except: [:new]
   before_action :set_user, only: [:show, :edit, :update]
 
   def index

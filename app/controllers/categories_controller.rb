@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :requireLogin
 
   def index
     @categories = Category.all
