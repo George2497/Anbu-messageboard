@@ -3,12 +3,12 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update]
 
   def index
-    @posts = Post.paginate(page: params[:page], per_page: 10)
+    @posts = Post.includes(:categories).paginate(page: params[:page], per_page: 10)
+    @posts = Post.includes(:categories).paginate(page: params[:page], per_page: 10)
   end
 
   def new
     @post = Post.new
-    @categories = Category.all
   end
 
   def create
@@ -24,6 +24,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @categories = Category.all
   end
 
   def update
@@ -49,6 +50,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:title, :description)
+    params.require(:post).permit(:title, :description, category_ids: [])
   end
 end
