@@ -1,4 +1,40 @@
 <div class="container">
-  <h1 class="row justify-content-center"><%= @category.name %></h1>
+  <h1 class="row justify-content-center"><%= @category.name %> posts</h1>
 
+  <div class="apple_pagination">
+    <%= will_paginate @posts, :container => false %>
+  </div>
+
+  <% @posts.each do |post| %>
+    
+      <div class="card text-center shadowp mt-3">
+        <div class="card-header">
+          <% if post.user %>
+            by <em><%= link_to post.user.username, user_path(post.user) %></em><br>
+          <% end %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to post.title, post_path(post) %></h5>
+          <p class="card-text"><%= post.description %></p>
+          <p>Categories: <%= post.categories.map(&:name).join(", ") %></p>
+
+          <% if logged_in? && (post.user == current_user || current_user.admin) %>
+            <%= link_to 'View', post_path(post), class: "btn btn-primary" %>
+            <%= link_to 'Edit', edit_post_path(post), class: "btn btn-success" %>
+            <%= link_to 'Delete', post_path(post), class: "btn btn-danger", data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %> <br>
+          <% else %>
+            <%= link_to 'View', post_path(post), class: "btn btn-primary" %>
+          <% end %>
+            <%= link_to 'Back to Categories', categories_path %>
+          
+        </div>
+        <div class="card-footer text-muted">
+          <%= time_ago_in_words(post.created_at) %> ago
+        </div>
+      </div>
+  <% end %>
+
+  <div class="apple_pagination">
+    <%= will_paginate @posts, :container => false %>
+  </div>
 </div>
