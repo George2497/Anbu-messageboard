@@ -6,7 +6,8 @@
       <div class="col-sm-4">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title"><%= category.name %></h5>
+            <h4 class="card-title"><%= category.name %></h4>
+            <h6 class="category-count">Numebr of posts: <%= category.posts.size %></h6>
             <%= link_to 'Go to category', category_path(category) %>
           </div>
         </div>

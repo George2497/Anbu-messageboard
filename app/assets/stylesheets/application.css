@@ -95,3 +95,7 @@ body {
 .apple_pagination a:focus {
   text-decoration: underline;
 }
+
+.card-title {
+  text-decoration: underline;
+}
