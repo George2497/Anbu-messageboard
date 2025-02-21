@@ -28,4 +28,8 @@ Rails.application.routes.draw do
   # Category Controller routes
   resources :categories
   get 'categories', to: 'categories#index'
+
+  # Messages Controller routes
+  resources :messages
+  get 'messages', to: 'messages#index'
 end
